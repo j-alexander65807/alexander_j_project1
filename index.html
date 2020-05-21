@@ -9,22 +9,98 @@
 <body>
     <!--Introduction -->
 	<header id="headLine">
-		<h1 class="hidden">My Setup Example - N0TES</h1>
+        <img src="images/img.png" alt="N0TES Banner - version SB01">
+        <h1 class="hidden">My Setup Example - N0TES</h1>
 		<h2>My Setup Example</h2>
 		<p>Based on my N0TES_wireframe.pdf</p>
     </header>
     
     <!--Recreated wireframe -->
 	<section id="popup">
-		<h2 class="hidden">New Note - Input Form</h2>
-		<h2>New N0TE</h2>
-		<div class="formWrapper">
-            <h3 class="hidden">Note Location Verification</h3>
-            <h3 class="hidden">Note Type Select</h3>
-            <h3 class="hidden">Note Input</h3>
-            <h3 class="hidden">Note Tags</h3>
-            <h3 class="hidden">Options Forward</h3>
-			
+		<div class="container">
+            <h2 class="hidden">New Note - Input Form</h2>
+            <h2>New N0TE</h2>
+            
+            <!--Make a form, 
+                technically I think it might need to be multiple forms. That or
+                maybe thats what the form handler is for -->
+            <form action="/my-form-handler" method="post">
+                <div class="location">
+                    <ul>
+                        <li><h3 class="hidden">Note Location Verification</h3>
+                            <ul>
+                                <li>
+                                    <select id="book" name="book">
+                                        <option value="19W">19W</option>
+                                        <option value="20F">20F</option>
+                                        <option value="20S" selected>20S</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select id="section" name="section" >
+                                        <option value="Digital Media 2">Digital Media 2</option>
+                                        <option value="Design & Image 2">Design & Image 2</option>
+                                        <option value="Motion Design">Motion Design</option>
+                                        <option value="Web Development" selected>Web Development</option>
+                                        <option value="Multimedia Authoring 2">Multimedia Authoring 2</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="noteType">                    
+                    <h3 class="hidden">Note Type Selection </h3>
+                    <label for="type">Type: </label>
+                    <select id="type" name="type">
+                        <option value="Definition">Definition</option>
+                        <option value="Example">Example</option>
+                        <option value="Image">Image</option>
+                        <option value="Note" selected>Note</option>
+                        <option value="Reference">Reference</option>
+                        <option value="Quote">Quote</option>
+                    </select>
+                       
+                   
+                </div>
+                <div class="noteDetails">
+                    <h3 class="hidden">Note Input</h3>
+                    <ul>
+                        <li>
+                            <label for="title">Title: </label>
+                            <input type="text" id="title" name="title"></input>
+                        </li>
+                        <li>
+                            <label for="note">Note: </label>
+                            <textarea id="note" name="note"></textarea>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="noteTags">
+                    <h3 class="hidden">Note Tags</h3>
+                    <label>Tags: </label>
+                    <!--Not sure how to do this in html-->
+
+                </div>
+                <div class="noteNav">
+                    <h3 class="hidden">Options Forward</h3>
+                    <ul>
+                        <li class="button">
+                            <button type="button">Cancel</button>
+                        </li>
+                        <li class="button">
+                           <button type="submit">Save</button>
+                        </li>
+                        <li class="button">
+                            <button type="button">Chain</button>
+                        </li>
+                        <li class="button">
+                            <button type="button">Group</button>
+                        </li>
+                    </ul>
+                </div> 
+            </form>
 		</div>
 	</section>
 
