@@ -7,8 +7,15 @@ __SETTING UP FOLDERS AND FILES__
 ---
 ### Getting Started
 
-This is basic HTML / CSS/ Javascript build.
+This is basic HTML / CSS/ Javascript build.  
 Clone this to location of your choice and start editing.
+
+### Special Instructions
+To use the Access Database. 
+1. Open file assets/N0TES-verSB01.accdb
+2. click enable on the security warning 
+3. In the left side Navigation, open NotesF2 under Forms
+4. Test away
 
 ---
 #### Author
@@ -28,9 +35,9 @@ Individual or Team - work notes
 
 #### Include Checklist
 
-- [ ] main.css
+- [x] main.css
 - [x] reset.css
-- [ ] A JS file
-- [ ] wireframe
+- [x] A JS file
+- [x] wireframe
 
 
